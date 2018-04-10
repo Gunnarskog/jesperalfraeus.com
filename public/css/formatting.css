@@ -78,14 +78,15 @@ body {
   text-align: center;
 	border-width: 6px;
 	border-style:inset;
-	border-color: #34495E;
-	background-color: #ECF0F1;
+	border-color: #185D79;
+	background-image:url(/images/backgroundMountains.jpg);
 	width: 200%;
   height: auto;
 /*	padding-left: 25px;
 	padding-bottom: 0px;
   padding-right: 25px;*/
 	padding-top: 20px;
+  border-radius: 15%;
 
 
 }
@@ -104,7 +105,10 @@ body {
     position: relative;
     width: 34px;
     padding: 3px;*/
-    background-color: #3498DB;
+    background-color: #E9B231;
+    transition: 0.5s ease-in-out;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 a.link-image-ref {
