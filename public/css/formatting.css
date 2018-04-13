@@ -24,7 +24,7 @@ html {
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 300;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 
@@ -38,39 +38,142 @@ body {
   background-size: cover;*/
 }
 
-
-
-
-.hello-image {
-  width: 150px;
-  height: 56px;
+.row{
   position: absolute;
-  top: 3rem;
-  left: 10rem;
+left: 50%;
+transform: translate(-50%);
+
+}
+.progressbar{
+
+position: relative;
+left: 50%;
+top: 400px;
+transform: translate(-50%);
+counter-reset: step;
 }
 
-#hello-image-head {
-  width: 150px;
-  height: 56px;
-  position: relative;
-  top: 5.5rem;
-  left: 10rem;
-  z-index: 1;
+.progressbar li{
+list-style-type: none;
+float: left;
+width: 16.66%;
+position: relative;
+text-align: center
+}
+
+.progressbar li::before{
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: silver;
+
+}
+
+.progressbar li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child::after{
+  content: none;
+}
+
+.progressbar li.active{
+  color: white;
+}
+
+.progressbar li.active::before{
+  border-color: black;
+}
+
+.progressbar li.active:hover::before{
+  border-color: black;
+  width: 200px;
+  height: 130px;
+  line-height: 30px;
+  border: 3px solid black;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: -143px auto 10px auto;
+  background-color: silver;
+  padding: 8px;
+
   transition: 0.5s ease-in-out;
 }
 
-#hello-image-box {
-  width: 150px;
-  height: 56px;
-  position: absolute;
-  top: 7.2rem;
-  left: 10rem;
-  z-index: 2;
+#born:hover::before{
+
+  content:  "Born in the same place as the beloved Krister Sjögren had a summer cabin at one time";
+/*-webkit-transform: scale(1.5)
+transform: scale(1.5);*/
 }
 
-#hello-image-head:hover {
-  -webkit-transform: translateY(-25px);
-  transform: translateY(-25px);
+
+#pro:hover::before{
+  content:  "Played professional football for Carlstad United";
+
+}
+
+#web:hover::before{
+  content:  "Started studying Biomedical engineering at Linköping University";
+
+}
+
+#now:hover::before{
+  content:  "Made a sick webpage";
+
+}
+
+/* Tooltip text */
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.jesper-pic::before{
+  Hej
+}
+/*  display: inline;
+  margin-right: 75px;
+  border: solid green;
+  border-width: 2px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 45%;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}*/
+
+
+
+.jesper-pic {
+
+  height: auto;
+  width: 150px;
+  position: absolute;
+  top: 5rem;
+  right: 15rem;
+  border-radius: 15%;
 }
 
 
@@ -80,15 +183,13 @@ body {
 	border-style:inset;
 	border-color: #185D79;
 	background-image:url(/images/backgroundMountains.jpg);
-	width: 200%;
+	width: 700px;
   height: auto;
 /*	padding-left: 25px;
 	padding-bottom: 0px;
   padding-right: 25px;*/
 	padding-top: 20px;
   border-radius: 15%;
-
-
 }
 
 
@@ -107,9 +208,11 @@ body {
     padding: 3px;*/
     background-color: #E9B231;
     transition: 0.5s ease-in-out;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+/*    transform: scale(1.5);*/
+  /*  transform: rotate(360deg);*/
 }
+
 
 a.link-image-ref {
     color: #fff;
@@ -130,24 +233,29 @@ a.link-image-ref {
 .jesper-name {
   text-align: center;
   font-size: 4.0rem;
-  font-weight: 350;
+  font-weight: 100;
   line-height: 1;
   letter-spacing: -.06rem;
   color: #222;
+}
+
+.second_header{
+  position: relative;
+  text-align: center;
+  font-size: 4.0rem;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -.06rem;
+  color: white;
+  top: 400px;
+  mix-blend-mode: difference;
+
 }
 
 .project-title {
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 10rem;
-}
-
-
-.jesper-image {
-  border: "0";
-  padding-left: 10rem;
-  max-width: 80%;
-  margin-bottom: -0.7rem;
 }
 
 /* To avoid image links to appear on two rows */
@@ -180,6 +288,7 @@ a.link-image-ref {
   background-position:center center;
   background-attachment:fixed;
 }
+
 
 /* =============================================================================
 * Skeleton V2.0.4
@@ -215,8 +324,8 @@ a.link-image-ref {
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 0 auto;
+
   padding: 0 20px;
   box-sizing: border-box; }
 .column,
