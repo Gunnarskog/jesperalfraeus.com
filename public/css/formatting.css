@@ -135,6 +135,15 @@ transform: scale(1.5);*/
 
 }
 
+#hong:hover::before{
+  content:  "Studied in Hong Kong one semester";
+
+}
+#canada:hover::before{
+  content:  "Skiing in Canada for three months";
+
+}
+
 #now:hover::before{
   content:  "Made a sick webpage";
 
