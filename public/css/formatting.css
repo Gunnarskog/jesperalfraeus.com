@@ -17,22 +17,40 @@ div {
   margin: 0 auto;
 }
 
+
 #main-box {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 8rem;
   border-color: black;
   border-left: 0.4rem double black;
   border-right: 0.4rem double black;
   width: 70rem;
+  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
 }
 
 #image-box {
   margin: 0 auto;
+  margin-top: 1rem;
   width: 40rem;
+  animation-delay: 5s;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#progbar {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#background-mountains{
+  position: absolute;
+  margin-top: 25rem;
+  width: 500rem;
+
 }
 
 .background-image {
-
 width: 100%;
 }
 
@@ -52,7 +70,7 @@ width: 100%;
 .link-image:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
-  background-color: #ccff66;
+  background-color: #62dcf7;
 }
 
 /* Timeline */
@@ -70,7 +88,7 @@ counter-reset: step;
 .progressbar li{
 list-style-type: none;
 float: left;
-width: 16.66%;
+width: 16.3%;
 position: relative;
 text-align: center;
 margin-top: 15rem;
@@ -177,4 +195,13 @@ content: '';
     to {
         opacity:1;
     }
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
