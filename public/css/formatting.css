@@ -1,11 +1,14 @@
 html{
-  height: 100%;
+  height: 100vw;
+  width: 100vw;
 }
 
 body {
+  height: 100vw;
+  width: 100vw;
   font-size: 1.8rem;
   /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 1;
   font-weight: 300;
   font-family: "Abel";
   color: #222;
@@ -14,7 +17,7 @@ body {
 }
 
 div {
-  margin: 0 auto;
+  margin: auto;
 }
 
 
@@ -24,13 +27,13 @@ div {
   border-color: black;
   border-left: 0.4rem double black;
   border-right: 0.4rem double black;
-  width: 70rem;
+  width: 50vw;
   animation: fadein 3s;
   -webkit-animation: fadein 3s;
 }
 
 #image-box {
-  margin: 0 auto;
+margin: auto;
   margin-top: 1rem;
   width: 40rem;
   animation-delay: 5s;
@@ -77,7 +80,6 @@ width: 100%;
 
 }
 .progressbar{
-
 position: relative;
 left: 50%;
 top: 400px;
@@ -134,7 +136,7 @@ content: '';
   color: white;
 }
 
-.progressbar li.active:hover::before{
+.progressbar li.active:hover::before, .progressbar li.active:active::before{
   border-color: black;
   width: 200px;
   height: 130px;
@@ -204,4 +206,28 @@ content: '';
   100% {
     transform: translateX(0);
   }
+}
+
+@media only screen and (max-width : 320px)
+{
+  body
+  {
+    font-size: 0.7rem;
+  }
+  .jesper-name {
+    font-size: 2rem;
+  }
+  #main-box {
+  margin-top: 4rem;
+    width: 100vw;
+  }
+  #image-box{
+    width: 80vw;
+  }
+  .link-image{
+    width: 10vw;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+  }
+  .progressbar{
+visibility: hidden;
 }
