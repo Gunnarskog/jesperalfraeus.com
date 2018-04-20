@@ -20,10 +20,52 @@ div {
   margin: auto;
 }
 
+.weather-app{
+  position: static;
+  margin-left: -15vw;
+  margin-top: 0vw;
+}
+
+#icon_w{
+  width: 5vw;
+}
+
+.left{
+  font-size: 2vw;
+  position: absolute;
+  margin-top: 0.7vw;
+  margin-left: 5vw;
+}
+
+
+.bottom{
+    font-size: 1vw;
+    position: absolute;
+    margin-top: 3vw;
+    margin-left: 5.4vw;
+    align-items: center;
+
+}
+/* .bottom{
+  margin-left: 9vw;
+  margin-top: 5vw;
+}  */
+
+/* .left{
+  position: relative;
+  margin-right: 50;
+} */
+
+.top{
+  position: absolute;
+  margin-left: 0vw;
+  margin-top: 1vw;
+}
+
 
 #main-box {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 8vw;
   border-color: black;
   border-left: 0.4rem double black;
   border-right: 0.4rem double black;
@@ -218,11 +260,11 @@ content: '';
     font-size: 2rem;
   }
   #main-box {
-  margin-top: 4rem;
+  margin-top: 100vw;
     width: 100vw;
   }
   #image-box{
-    width: 80vw;
+    width: 60vw;
   }
   .link-image{
     width: 10vw;
@@ -230,4 +272,33 @@ content: '';
   }
   .progressbar{
 visibility: hidden;
+}
+
+.weather-app{
+  position: static;
+  margin-left: -15vw;
+  margin-top: 0vw;
+}
+
+#icon_w{
+  width: 15vw;
+  margin-left: 50vw;
+  margin-top: 18rem;
+}
+
+.left{
+  font-size: 10vw;
+  position: absolute;
+  margin-left: 52vw;
+  margin-top: 22rem;
+}
+
+
+.bottom{
+    font-size: 3vw;
+    position: absolute;
+    margin-left: 52vw;
+    margin-top: 25rem;
+    align-items: center;
+
 }
