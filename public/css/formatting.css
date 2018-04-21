@@ -1,4 +1,4 @@
-html{
+html {
   height: 100vw;
   width: 100vw;
 }
@@ -20,48 +20,64 @@ div {
   margin: auto;
 }
 
-.weather-app{
-  position: static;
-  margin-left: -15vw;
-  margin-top: 0vw;
-}
-
-#icon_w{
-  width: 5vw;
-}
-
-.left{
-  font-size: 2vw;
-  position: absolute;
-  margin-top: 0.7vw;
-  margin-left: 5vw;
-}
-
-
-.bottom{
-    font-size: 1vw;
-    position: absolute;
-    margin-top: 3vw;
-    margin-left: 5.4vw;
-    align-items: center;
-
-}
-/* .bottom{
-  margin-left: 9vw;
-  margin-top: 5vw;
-}  */
-
-/* .left{
+.weather-app {
   position: relative;
-  margin-right: 50;
-} */
-
-.top{
-  position: absolute;
-  margin-left: 0vw;
-  margin-top: 1vw;
 }
 
+.left {
+  position: absolute;
+  margin-top: -14rem;
+  text-align: center;
+}
+
+.weather {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+
+}
+
+.right {
+  position: relative;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+#wind{
+  margin-left: 1rem;
+}
+
+#drop{
+  height: 1.5rem;
+}
+
+
+
+#icon_w {
+  width: 10rem;
+}
+
+.temperature {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.temperature::after{
+  content: "\00b0";
+}
+
+.temperature::before{
+  content: "i";
+  font-size: 2;
+  visibility: hidden;
+
+}
+
+
+/* Main box  */
 
 #main-box {
   text-align: center;
@@ -74,9 +90,11 @@ div {
   -webkit-animation: fadein 3s;
 }
 
+/* Linköping skyline image */
+
 #image-box {
-margin: auto;
-  margin-top: 1rem;
+  margin: auto;
+  margin-top: 8rem;
   width: 40rem;
   animation-delay: 5s;
   animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -88,15 +106,14 @@ margin: auto;
   -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
-#background-mountains{
+#background-mountains {
   position: absolute;
   margin-top: 25rem;
   width: 500rem;
-
 }
 
 .background-image {
-width: 100%;
+  width: 100%;
 }
 
 .jesper-name {
@@ -121,26 +138,25 @@ width: 100%;
 /* Timeline */
 
 }
-.progressbar{
-position: relative;
-left: 50%;
-top: 400px;
-transform: translate(-50%);
-counter-reset: step;
+
+.progressbar {
+  position: relative;
+  left: 50%;
+  top: 400px;
+  transform: translate(-50%);
+  counter-reset: step;
 }
 
-.progressbar li{
-list-style-type: none;
-float: left;
-width: 16.3%;
-position: relative;
-text-align: center;
-margin-top: 15rem;
+.progressbar li {
+  list-style-type: none;
+  float: left;
+  width: 16.3%;
+  position: relative;
+  text-align: center;
+  margin-top: 15rem;
 }
 
-
-.progressbar li::before{
-
+.progressbar li::before {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -149,12 +165,11 @@ margin-top: 15rem;
   display: block;
   text-align: center;
   margin: 0 auto 10px auto;
-background-color: black;
-content: '';
-
+  background-color: black;
+  content: '';
 }
 
-.progressbar li::after{
+.progressbar li::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -165,20 +180,20 @@ content: '';
   z-index: -1;
 }
 
-.progressbar li:first-child::after{
+.progressbar li:first-child::after {
   content: none;
 }
 
-.progressbar li.active{
+.progressbar li.active {
   mix-blend-mode: darken;
 }
 
-.progressbar li.active::before{
+.progressbar li.active::before {
   border-color: black;
   color: white;
 }
 
-.progressbar li.active:hover::before, .progressbar li.active:active::before{
+.progressbar li.active:hover::before, .progressbar li.active:active::before {
   border-color: black;
   width: 200px;
   height: 130px;
@@ -195,50 +210,56 @@ content: '';
   transition: 0.5s ease-in-out;
 }
 
-#born:hover::before{
-  content:  "Born in the same place as the beloved Krister Sjögren had a summer cabin at one time";
+#born:hover::before {
+  content: "Born in the same place as the beloved Krister Sjögren had a summer cabin at one time";
   animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
 }
 
-#pro:hover::before{
-  content:  "Played professional football for Carlstad United";
+#pro:hover::before {
+  content: "Played professional football for Carlstad United";
   animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
 }
 
-#web:hover::before{
-  content:  "Started studying Biomedical engineering at Linköping University";
+#web:hover::before {
+  content: "Started studying Biomedical engineering at Linköping University";
   animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
 }
 
-#hong:hover::before{
-  content:  "Studied in Hong Kong one semester";
+#hong:hover::before {
+  content: "Studied in Hong Kong one semester";
   animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
-}
-#canada:hover::before{
-  content:  "Skiing in Canada for three months";
-  animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
 }
 
-#now:hover::before{
-  content:  "Made a sick webpage";
+#canada:hover::before {
+  content: "Skiing in Canada for three months";
   animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
 }
 
+#now:hover::before {
+  content: "Made a sick webpage";
+  animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
+}
 
-
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes slideInFromLeft {
@@ -250,55 +271,81 @@ content: '';
   }
 }
 
-@media only screen and (max-width : 500px)
-{
-  body
-  {
-    font-size: 0.7rem;
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 1rem;
   }
   .jesper-name {
     font-size: 2rem;
   }
   #main-box {
-  margin-top: 100vw;
+    margin-top: 15vw;
     width: 100vw;
   }
-  #image-box{
+  #image-box {
     width: 60vw;
+    margin-top: 5rem;
   }
-  .link-image{
+
+  .weather-app {
+    position: relative;
+  }
+
+  .left {
+    position: absolute;
+    margin-top: -8rem;
+    text-align: center;
+  }
+
+  .weather {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+
+  }
+
+  .right {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+
+  }
+
+  #wind{
+    margin-left: 1rem;
+  }
+
+  #drop{
+    height: 1rem;
+  }
+
+  #icon_w {
+    width: 5rem;
+  }
+
+  .temperature {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .temperature::after{
+    content: "\00b0";
+  }
+
+  .temperature::before{
+    content: "i";
+    font-size: 1rem;
+    visibility: hidden;
+
+  }
+
+  .link-image {
     width: 10vw;
     margin: 0 0.5rem 0.5rem 0.5rem;
   }
-  .progressbar{
-visibility: hidden;
-}
-
-.weather-app{
-  position: static;
-  margin-left: -15vw;
-  margin-top: 0vw;
-}
-
-#icon_w{
-  width: 15vw;
-  margin-left: 50vw;
-  margin-top: 18rem;
-}
-
-.left{
-  font-size: 10vw;
-  position: absolute;
-  margin-left: 52vw;
-  margin-top: 22rem;
-}
-
-
-.bottom{
-    font-size: 3vw;
-    position: absolute;
-    margin-left: 52vw;
-    margin-top: 25rem;
-    align-items: center;
-
-}
+  .progressbar {
+    visibility: hidden;
+  }

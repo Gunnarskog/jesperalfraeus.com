@@ -22,7 +22,7 @@ function sendRequest(url){
       weather.wind = data.wind.speed;
       // weather.direction = data.wind.deg;
       weather.loc = data.name;
-      weather.temp = data.main.temp;
+      weather.temp = Math.round(data.main.temp);
       update(weather);
     }
   }

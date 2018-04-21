@@ -28,31 +28,6 @@
 
 <body>
   <div id="main-box" class="container">
-    <div class="weather-app">
-      <div class="left">
-        <div class="temperature"><span id="temperature">0</span>&deg;</div>
-
-      </div>
-      <div class="right">
-        <div class="top">
-          <img id="icon_w" src="https://openweathermap.org/img/w/01d.png" />
-        </div>
-
-        <div class="bottom">
-          <div class="location"><span id="location">Linköping</span></div>
-          <div class="humidity">
-            <img src="/images/drop.png" height="10rem" />
-            <span id="humidity">0</span>%
-          </div>
-
-          <div class="wind">
-            <span id="wind">0</span> m/s
-            <!-- <span id="direction">N</span> -->
-          </div>
-
-        </div>
-      </div>
-    </div>
     <h1 class="jesper-name">Jesper Alfraeus</h1>
     <p>M.Sc. in Biomedical engineering at <a href="https://liu.se/">Linköping university</a>. <br> I am currently looking for new projects to take on, send me an email if you have one!
       <p>
@@ -69,15 +44,33 @@
               <img class="link-image" src="/images/facebook.svg">
             </a>
         </p>
-
   </div>
+<p>
+  <div id="image-box" class="container">
+    <img class="background-image" src="/images/linkanskyline.png">
+    <div class="weather-app">
+      <div class="left">
+        <img id="icon_w" src="https://openweathermap.org/img/w/01d.png"/>
+      </div>
+      <div class="right">
+          <div class="temperature"><span id="temperature">0</span></div>
+          <div class="weather"><span id="location">Linköping</span></div>
+          <div class="weather"> <img id="drop" src="/images/drop.png"/> <span id="humidity">0</span>%
+          <div class="weather"> <span id="wind">0</span> m/s
+            <!-- <span id="direction">N</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <div id="gradient-background"></div>
 
 
   <p>
-    <div id="image-box" class="container">
-      <img class="background-image" src="/images/linkanskyline.png">
-    </div>
+
 
     <p>
       <ul id="progbar" class="progressbar">
