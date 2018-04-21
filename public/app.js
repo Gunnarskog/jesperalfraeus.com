@@ -7,7 +7,7 @@ var wind;
 var direction;
 
 function updateByCityId(city_id){
-  var url = "http://api.openweathermap.org/data/2.5/weather?"+"id="+city_id+"&APPID="+ APPID+"&units=metric";
+  var url = "https://api.openweathermap.org/data/2.5/weather?"+"id="+city_id+"&APPID="+ APPID+"&units=metric";
   sendRequest(url);
 }
 
@@ -33,7 +33,7 @@ function sendRequest(url){
   // document.getElementById("direction").innerHTML = "What";
 
 function update(weather) {
-  icon_w.src = "http://openweathermap.org/img/w/" + weather.icon_w + ".png";
+  icon_w.src = "https://openweathermap.org/img/w/" + weather.icon_w + ".png";
   humidity.innerHTML = weather.humidity;
   wind.innerHTML = weather.wind;
   // direction.innerHTML = weather.direction;
