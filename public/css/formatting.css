@@ -35,7 +35,6 @@ div {
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: center;
-
 }
 
 .right {
@@ -43,18 +42,15 @@ div {
   margin-top: 2rem;
   text-align: center;
   font-size: 2rem;
-
 }
 
-#wind{
+#wind {
   margin-left: 1rem;
 }
 
-#drop{
+#drop {
   height: 1.5rem;
 }
-
-
 
 #icon_w {
   width: 10rem;
@@ -65,17 +61,15 @@ div {
   margin-bottom: 1rem;
 }
 
-.temperature::after{
+.temperature::after {
   content: "\00b0";
 }
 
-.temperature::before{
+.temperature::before {
   content: "i";
   font-size: 2;
   visibility: hidden;
-
 }
-
 
 /* Main box  */
 
@@ -252,6 +246,34 @@ div {
   /* Safari and Chrome */
 }
 
+#streck {
+  text-align: center;
+  margin-top: 35rem;
+}
+
+form {
+  font-size: 3rem;
+  padding: 5rem;
+  text-align: center;
+  align-items: center;
+
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 @-webkit-keyframes fadein {
   /* Safari and Chrome */
   from {
@@ -286,62 +308,48 @@ div {
     width: 60vw;
     margin-top: 5rem;
   }
-
   .weather-app {
     position: relative;
   }
-
   .left {
     position: absolute;
     margin-top: -8rem;
     text-align: center;
   }
-
   .weather {
     display: inline-block;
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: center;
-
   }
-
   .right {
     position: relative;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     text-align: center;
     font-size: 0.8rem;
-
   }
-
-  #wind{
+  #wind {
     margin-left: 1rem;
   }
-
-  #drop{
+  #drop {
     height: 1rem;
   }
-
   #icon_w {
     width: 5rem;
   }
-
   .temperature {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-
-  .temperature::after{
+  .temperature::after {
     content: "\00b0";
   }
-
-  .temperature::before{
+  .temperature::before {
     content: "i";
     font-size: 1rem;
     visibility: hidden;
-
   }
-
   .link-image {
     width: 10vw;
     margin: 0 0.5rem 0.5rem 0.5rem;

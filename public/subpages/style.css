@@ -1,0 +1,64 @@
+html {
+  height: 100%;
+}
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+				 0px 8px 13px rgba(0,0,0,0.4),
+				 0px 18px 23px rgba(0,0,0,0.2);
+}
+
+body{
+
+	background: url(https://images.unsplash.com/photo-1509486952655-66ae56df4747?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a67789760c6f106ea9bb6b8f33ffba1d&auto=format&fit=crop&w=1189&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+background-attachment: fixed;
+ background-position: center center;
+	font-family: 'Lato', sans-serif;
+	color: white;
+	min-height: 100%;
+
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 4em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+hr {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 2px solid rgba(0,0,0,0.3)
+}
+form {
+	padding-top: 3%;
+}
+
+
+#exampleInputEmail1 {
+	margin: 0 auto;
+	width: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+html, body {
+width: auto !important;
+overflow-x: hidden !important;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 0.8em;
+}
+}
