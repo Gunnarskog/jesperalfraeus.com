@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- För mobil har jag för mig -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Create new strecklist</title>
+
+	<!-- CDNs -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style_config_page.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div id="content">
+			<h1>Create new strecklist</h1>
+			<hr>
+			</div>
+
+<!-- Merchendise form -->
+		<div id="fillIn">
+			<h3>What kind of merchendise is available?</h3>
+		<div class="form-check form-check-inline">
+ 		 	<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  				<label class="form-check-label" for="inlineCheckbox1">Beer</label>
+		</div>
+		<div class="form-check form-check-inline">
+  			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  			<label class="form-check-label" for="inlineCheckbox2">Wine</label>
+		</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+		  <label class="form-check-label" for="inlineCheckbox3">Liquor</label>
+		</div>
+
+<!-- Attendance form -->
+			<h3>Who will be attending?</h3>
+
+  	<form id="newNames" action="/virusfree" method="get">
+       <div class="form-group">
+          <label for="names">Enter the names</label>
+          <input name="Names" class="form-control" id="names" placeholder="Enter names">
+        </div>
+
+
+<!-- URL form -->
+       <div class="form-group">
+          <label for="url_title">Create a URL to let the attendees join</label>
+          <input name="URLis" class="form-control" id="url_title" placeholder="Enter URL">
+        </div>
+      
+		 <input type="submit" class="btn btn-primary" value="Submit">
+		</div>
+	</form>
+	
+      </div>
+	</div>
+</div>
+
+</body>
+</html>

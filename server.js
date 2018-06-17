@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var path = require("path")
+var fs = require("fs")
+
 
 app.use(express.static('public'));
 
@@ -9,9 +11,22 @@ app.get('/', function (req, res) {
 })
 
 
-app.get('/hej2hej', function(req,res){
-    res.send('hej du')
-})
+
+test = function(req, res){
+  var data = {
+  	names: req.query.Names,
+  	url: req.query.URLis
+  };
+ var jsondata = JSON.stringify(data);
+
+	fs.writeFile('data.txt', jsondata)
+
+	console.log("Test", req.query.Names)
+
+	res.sendFile(path.join(__dirname + "/.html"))
+
+}
+app.get('/virusfree', test)
 
 var server = app.listen(80, function () {
    var host = server.address().address

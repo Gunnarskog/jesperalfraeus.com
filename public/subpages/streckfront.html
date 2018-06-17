@@ -10,7 +10,7 @@
 	<!-- CDNs -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="streckfront.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
@@ -51,27 +51,38 @@
   </div>
 </nav>
 
-<!-- Navbar -->
+<!--  -->
 <div class="container">
 	<div class="row">
 		<div class="col-12">
 			<div id="content">
 			<h1>The Streck List</h1>
-			<h3>Streck whatever the holy hell you want yo</h3>
+			<h3>Streck - whenever, wherever</h3>
 			<hr>
-
-			<form>
-			 <div class="form-group">
-  				<label for="exampleInputEmail1">Enter workspace URL</label>
-   				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter URL">
-    			<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-			  </div>
-			</form>
-			<a href="/subpages/streck_andrasidan.html" class="btn btn-lg"> <i class="fas fa-th-list"></i>  Get started!</a>
 			</div>
-		</div>
+<!-- Enter URL form -->
+      <div id="formContent">
+      <form id="topform">
+       <div class="form-group">
+          <label for="exampleInputEmail1">Enter existing workspace URL</label>
+          <input class="form-control" placeholder="Enter URL">
+        </div>
+      </form>
+      <a href="/subpages/strecklista.html" class="btn btn-lg"> <i class="fas fa-th-list"></i> Get started</a>
+<!-- Create new URL form -->
+       <form id="newURL">
+       <div class="form-group">
+          <label for="exampleInputEmail1">Create new strecklist</label>
+          <input class="form-control" placeholder="Enter URL">
+        </div>
+      </form>
+        <a href="/subpages/config_page.html" class="btn btn-lg"> Create </a>
+    </div>
+     
+    </div>
 	</div>
 </div>
+
 
 
 

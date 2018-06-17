@@ -1,93 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+	
+	<!-- För mobil har jag för mig -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta charset="utf-8">
+	<title>TheStreckList</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Jesper Alfraeus - personal webpage</title>
-
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <link href="/css/formatting.css" rel="stylesheet" type="text/css" />
-
-  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-  <!-- Favicon&nbsp;&nbsp;&nbsp;
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/images/jepskid.jpg">
-
-
+	<!-- CDNs -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="strecklista.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
-
 <body>
-  <div id="main-box" class="container">
-    <h1 class="jesper-name">Strecklista</h1>
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+
+   
+    <div class="col-12">
+            <h1>Gregory and Thomas Wedding</h1>
+    <hr>
+      <table class="table table-striped rounded">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Beer</th>
+      <th scope="col">Wine</th>
+      <th scope="col">Liquor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="name">Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Thornton</td>
+    </tr>
+    <tr>
+      <td id="name">Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Thornton</td>
+    </tr>
+    <tr>
+      <td id="name">Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Thornton</td>
+    </tr>
+        <tr>
+      <td id="name">Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Thornton</td>
+    </tr>
+        <tr>
+      <td id="name">Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Thornton</td>
+    </tr>
+        <tr>
+      <td id="name">Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Thornton</td>
+    </tr>
+        <tr>
+      <td id="name">Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Thornton</td>
+    </tr>
+        <tr>
+      <td id="name">Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Thornton</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="col">Total</th>
+      <th scope="col">15</th>
+      <th scope="col">200</th>
+      <th scope="col">16</th>
+    </tr>
+  </tfoot>
+</table>
+    </div>
+
   </div>
-  <form>
-  Full Name:<input type="text" name="fullname" id="fullname" /><br/><br/>
-  <input type="submit" value="Submit" onclick="addRow();">
-</form>
+</div>
 
 
 
-
-
-  <table id='table'>
-    <tr>
-      <th>Namn</th>
-      <!-- <th>Öl</th>
-      <th>Cider</th>
-      <th>Vin</th>
-      <th>Snaps</th> -->
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <!-- <td>Maria Anders</td>
-      <td>Germany</td>
-      <td>Maria Anders</td>
-      <td>Germany</td> -->
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <!-- <td>Francisco Chang</td>
-      <td>Mexico</td>
-      <td>Maria Anders</td>
-      <td>Germany</td> -->
-    </tr>
-  </table>
-
-  <script>
-    function addRow() {
-      var fullname = document.getElementById('fullname').value;
-
-      var table = document.getElementById('table');
-
-      var newRow = table.insertRow(1);
-
-      var cell1 = newRow.insertCell(0);
-
-      cell1.innerHTML = fullname;
-    }
-  </script>
-  <button onclick="addRow();">Add Row</button>
 
 </body>
-
-
-
-
-<footer>
-  <script type="text/javascript" src="app.js"></script>
-  <footer/>
-
 </html>
