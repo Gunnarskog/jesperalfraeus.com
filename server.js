@@ -19,16 +19,21 @@ test = function(req, res){
   };
  var jsondata = JSON.stringify(data);
 
-	fs.writeFile('data.txt', jsondata)
+	fs.writeFile('data.txt', jsondata, (err)=>{
+        if (err) throw err;
+
+        console.log("file  saved!")
+    
+    })
 
 	console.log("Test", req.query.Names)
 
-	res.sendFile(path.join(__dirname + "/.html"))
+	res.sendFile(path.join(__dirname + "/public/index.html"))
 
 }
 app.get('/virusfree', test)
 
-var server = app.listen(80, function () {
+var server = app.listen(8080, function () {
    var host = server.address().address
    var port = server.address().port
    console.log("Example app listening at http://%s:%s", host, port)
