@@ -9,7 +9,7 @@ html {
 
 #content {
 	text-align: center;
-	padding-top: 5%;
+	padding-top: 15%;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
 				 0px 8px 13px rgba(0,0,0,0.4),
 				 0px 18px 23px rgba(0,0,0,0.2);
@@ -20,15 +20,19 @@ html {
 
 }
 
+a {
+	
+}
+
 body{
 
-	background: url(https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=62ea44417a9033efb738b7dd477f11bc&auto=format&fit=crop&w=634&q=80);
+	background: url(https://images.unsplash.com/photo-1495839924086-b11bf070c5ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49a6210b9bca20cfbf5dbd673baf6c0a&auto=format&fit=crop&w=967&q=80);
 	background-repeat: no-repeat;
 	background-size: cover;
 background-attachment: fixed;
  background-position: center center;
 	font-family: 'Lato', sans-serif;
-	color: black;
+	color: white;
 	min-height: 100%;
 
 }
