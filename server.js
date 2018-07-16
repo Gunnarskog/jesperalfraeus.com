@@ -11,8 +11,8 @@ app.get('/', function (req, res) {
 })
 
 
-
-/*test = function(req, res){
+/*
+test = function(req, res){
   var URLKey = req.query.URLis;
   var namesArr = req.query.Names.split(",");
   var data = {
@@ -39,11 +39,11 @@ app.get('/', function (req, res) {
 
 }
 
-app.get('/virusfree', test)
+app.get('/virusfree', test)*/
 
 var server = app.listen(8080, function () {
    var host = server.address().address
    var port = server.address().port
    console.log("Example app listening at http://%s:%s", host, port)
 
-})*/
+})
