@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 
 
 
-test = function(req, res){
+/*test = function(req, res){
   var URLKey = req.query.URLis;
   var namesArr = req.query.Names.split(",");
   var data = {
@@ -25,8 +25,9 @@ test = function(req, res){
     }})
 }
 }
+*/
 
- var jsondata = JSON.stringify(data);
+/* var jsondata = JSON.stringify(data);
 
 	fs.writeFile('data.json', jsondata, (err)=>{
         if (err) throw err;
@@ -37,13 +38,12 @@ test = function(req, res){
 
 	res.sendFile(path.join(__dirname + "/public/subpages/strecklista.html"))
 
-}
+}*/
 
-app.get('/virusfree', test)
+/*app.get('/virusfree', test)*/
 
 var server = app.listen(8000, function () {
    var host = server.address().address
    var port = server.address().port
    console.log("Example app listening at http://%s:%s", host, port)
-
 })
