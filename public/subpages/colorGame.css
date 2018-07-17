@@ -2,13 +2,15 @@ body{
 	background-color: #232323;
 	margin: 0;
 	font-family: 'Merienda', cursive;
+
 }
 
 h1 {
+	font-size: 2.5rem;
 	text-align: center;
 	line-height: 1.2;
 	color: white;
-	background: steelblue;
+	background: silver;
 	margin: 0;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -35,11 +37,11 @@ h1 {
 
 #container {
 	margin: 20px auto;
-	max-width: 600px;
+	max-width: 700px;
 }
 
 .selected {
-	background: steelblue;
+	background: #B29600;
 	color: white;
 }
 
@@ -53,7 +55,7 @@ button {
 	text-transform: uppercase;
 	height: 100%;
 	font-weight: 700;
-	color: steelblue;
+	color: #B29600;
 	letter-spacing: 1px;
 	font-size: inherit;
 	transition: all 0.5s;
@@ -65,7 +67,7 @@ button {
 
 button:hover {
 	color: white;
-	background-color: steelblue;
+	background-color: #B29600;
 }
 
 #message{
