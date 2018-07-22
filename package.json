@@ -1,0 +1,29 @@
+{
+  "name": "jesperalfraeus.com",
+  "version": "1.0.0",
+  "description": "Jesper Alfraeus personal webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gunnarskog/jesperalfraeus.com.git"
+  },
+  "keywords": [
+    "personal",
+    "webpage",
+    "jesper",
+    "alfraeus"
+  ],
+  "author": "Jesper Alfraeus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gunnarskog/jesperalfraeus.com/issues"
+  },
+  "homepage": "https://github.com/Gunnarskog/jesperalfraeus.com#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}

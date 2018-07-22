@@ -1,0 +1,244 @@
+html {
+  height: 100vw;
+  width: 100vw;
+}
+
+body {
+  height: 100vw;
+  width: 100vw;
+  font-size: 1.8rem;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1;
+  font-weight: 300;
+  font-family: "Abel";
+  color: #222;
+  background: radial-gradient(white 75%, #DEDDDD) fixed;
+  height: auto;
+}
+
+div {
+  margin: auto;
+}
+
+.weather-app {
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  margin-top: -14rem;
+  text-align: center;
+}
+
+.weather {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.right {
+  position: relative;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#wind {
+  margin-left: 1rem;
+}
+
+#drop {
+  height: 1.5rem;
+}
+
+#icon_w {
+  width: 10rem;
+}
+
+#colorgame {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.temperature {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.temperature::after {
+  content: "\00b0";
+}
+
+.temperature::before {
+  content: "i";
+  font-size: 2;
+  visibility: hidden;
+}
+
+/* Main box  */
+
+#main-box {
+  text-align: center;
+  margin-top: 8vw;
+  border-color: black;
+  border-left: 0.4rem double black;
+  border-right: 0.4rem double black;
+  width: 50vw;
+  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+}
+
+/* Linköping skyline image */
+
+#image-box {
+  margin: auto;
+  margin-top: 8rem;
+  width: 40rem;
+  animation-delay: 5s;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#progbar {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#background-mountains {
+  position: absolute;
+  margin-top: 25rem;
+  width: 500rem;
+}
+
+.background-image {
+  width: 100%;
+}
+
+.jesper-name {
+  font-size: 4rem;
+}
+
+.link-image {
+  width: 4rem;
+  position: relative;
+  top: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  transition: 0.5s ease-in-out;
+  border-radius: 50%;
+}
+
+.link-image:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  background-color: #62dcf7;
+}
+
+
+
+form {
+  font-size: 3rem;
+  padding: 5rem;
+  text-align: center;
+  align-items: center;
+
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 1rem;
+  }
+  .jesper-name {
+    font-size: 2rem;
+  }
+  #main-box {
+    margin-top: 15vw;
+    width: 100vw;
+  }
+  #image-box {
+    width: 60vw;
+    margin-top: 5rem;
+  }
+  .weather-app {
+    position: relative;
+  }
+  .left {
+    position: absolute;
+    margin-top: -8rem;
+    text-align: center;
+  }
+  .weather {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  .right {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  #wind {
+    margin-left: 1rem;
+  }
+  #drop {
+    height: 1rem;
+  }
+  #icon_w {
+    width: 5rem;
+  }
+  .temperature {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .temperature::after {
+    content: "\00b0";
+  }
+  .temperature::before {
+    content: "i";
+    font-size: 1rem;
+    visibility: hidden;
+  }
+  .link-image {
+    width: 10vw;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+  }
+  .progressbar {
+    visibility: hidden;
+  }
