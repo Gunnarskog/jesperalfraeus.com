@@ -17,7 +17,7 @@ app.get("/colorgame", function(req, res){
 });
 /*Colorgame*/
 
-var server = app.listen(80, function(res, req){
+var server = app.listen(8080, function(res, req){
    var host = server.address().address
    var port = server.address().port
    console.log("Server listening at http://%s:%s", host, port)
