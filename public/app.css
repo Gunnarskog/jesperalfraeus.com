@@ -6,7 +6,7 @@ html {
 body {
   height: 100vw;
   width: 100vw;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1;
   font-weight: 300;
@@ -26,8 +26,8 @@ div {
 
 .games{
   text-align: center;
-  margin-top: 50px;
-  font-size: 2rem;
+  margin-top: 20px;
+  font-size: 1.6rem;
 }
 .left {
   position: absolute;
@@ -81,7 +81,7 @@ div {
 
 #main-box {
   text-align: center;
-  margin-top: 8vw;
+  margin-top: 6vw;
   border-color: black;
   border-left: 0.4rem double black;
   border-right: 0.4rem double black;
@@ -99,7 +99,7 @@ div {
   animation-delay: 5s;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 #progbar {
