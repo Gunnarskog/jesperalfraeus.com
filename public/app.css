@@ -24,6 +24,11 @@ div {
   position: relative;
 }
 
+.games{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+}
 .left {
   position: absolute;
   margin-top: -14rem;
@@ -56,10 +61,6 @@ div {
   width: 10rem;
 }
 
-#colorgame {
-  text-align: center;
-  margin-top: 50px;
-}
 
 .temperature {
   font-size: 3rem;
@@ -98,6 +99,7 @@ div {
   animation-delay: 5s;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+  margin-bottom: 100px;
 }
 
 #progbar {
